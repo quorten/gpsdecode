@@ -14,6 +14,6 @@ clean:
 
 dist:
 	mkdir gpsdecode-$(VERSION)
-	cp gpsdecode.c gpsencode.c bool.h Makefile gpsdecode-$(VERSION)/
+	cp -p gpsdecode.c gpsencode.c bool.h Makefile gpsdecode-$(VERSION)/
 	zip -9rq gpsdecode-$(VERSION).zip gpsdecode-$(VERSION)
 	rm -rf gpsdecode-$(VERSION)
